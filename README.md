@@ -35,6 +35,12 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin 
 
 Borrow out = A'Bin + A'B + BBin
+FULL ADDER 
+![Screenshot 2024-12-06 140823](https://github.com/user-attachments/assets/4de1482f-d6b1-4c10-9bdf-7228e650f397)
+FULL SUBRACTOR
+![Screenshot 2024-12-06 140958](https://github.com/user-attachments/assets/863c4134-d246-439b-a04f-06b3a663e85a)
+
+
 
 **Truthtable**
 
@@ -43,13 +49,56 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+FULL SUBRACTOR
+module exp4(sum,cout,a,b,cin);
+output sum;
+outputput cout;
+input a;
+input b;
+input cin;
+//internal nets
+wire s1,c1,c2;
+//Instantiate logic gate primitives
+xor(s1,a,b);
+and(c1,a,b);
+xor(sum,s1,cin);
+and(c2,s1,cin);
+or(cout,c2,c1);
+endmodule
+FULL ADDER
+module exp5 (df,bo,a,b,bin);
+output df;
+output bo;
+input a;
+input b;
+input bin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin); 
+assign df=w1^bin;
+assign bo=w2|w3;
+endmodule
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:24901129
 */
 
 **RTL Schematic**
+\\\
+FULL ADDER
+![Screenshot 2024-12-06 135852](https://github.com/user-attachments/assets/914368dd-6f2e-467f-9f0e-92a475bb2369)
+FULL SUBRACTOR
+![Screenshot 2024-12-06 140111](https://github.com/user-attachments/assets/eb7e048c-bfdf-4d34-b636-96264135951b)
+
 
 **Output Timing Waveform**
+\\\
+FULL ADDER 
+![Screenshot 2024-12-06 140214](https://github.com/user-attachments/assets/2048ca75-34b6-4540-8ca1-32a66f3f52fc)
+FULL SUBRACTOR
+![Screenshot 2024-12-06 140346](https://github.com/user-attachments/assets/cdb7d95c-33e9-420d-9209-7b779d3feee2)
+
+
+
 
 **Result:**
 
