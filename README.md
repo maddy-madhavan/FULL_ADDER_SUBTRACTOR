@@ -28,6 +28,7 @@ Carry = AB + ACin + BCin
 
 **Full Subtractor**
 
+
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
 
 ![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
@@ -85,16 +86,22 @@ endmodule
 **RTL Schematic**
 \\\
 FULL ADDER
+
 ![Screenshot 2024-12-06 135852](https://github.com/user-attachments/assets/914368dd-6f2e-467f-9f0e-92a475bb2369)
+
 FULL SUBRACTOR
+
 ![Screenshot 2024-12-06 140111](https://github.com/user-attachments/assets/eb7e048c-bfdf-4d34-b636-96264135951b)
 
 
 **Output Timing Waveform**
 \\\
 FULL ADDER 
+
 ![Screenshot 2024-12-06 140214](https://github.com/user-attachments/assets/2048ca75-34b6-4540-8ca1-32a66f3f52fc)
+
 FULL SUBRACTOR
+
 ![Screenshot 2024-12-06 140346](https://github.com/user-attachments/assets/cdb7d95c-33e9-420d-9209-7b779d3feee2)
 
 
